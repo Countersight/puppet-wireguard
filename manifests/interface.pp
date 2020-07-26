@@ -26,7 +26,7 @@
 # @param config_dir
 #   Path to wireguard configuration files
 define wireguard::interface (
-  String                          $private_key,
+  Deferred                        $private_key,
   Integer[1,65535]                $listen_port,
   Enum['present','absent']        $ensure   = 'present',
   Optional[Variant[Array,String]] $address  = undef,
