@@ -4,7 +4,7 @@ class wireguard::params {
   $config_dir_mode    = '0700'
   $config_dir_purge   = false
   case $facts['os']['name'] {
-    'RedHat', 'CentOS', 'VirtuozzoLinux': {
+    'RedHat', 'CentOS', 'VirtuozzoLinux', 'OracleLinux': {
       $manage_package = true
       $manage_repo    = true
       $package_name   = ['wireguard-dkms', 'wireguard-tools']
