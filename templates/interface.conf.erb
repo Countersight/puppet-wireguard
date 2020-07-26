@@ -12,7 +12,7 @@ Address = <%= @address %>
 <% if @saveconfig -%>
 SaveConfig = true
 <% end -%>
-PrivateKey = <%= @private_key.unwrap %>
+PrivateKey = <%= @private_key %>
 ListenPort = <%= @listen_port %>
 <%- if @mtu -%>
 MTU = <%= @mtu %>
